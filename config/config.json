@@ -1,0 +1,15 @@
+{
+	"prefix": "!",
+	"cogs": [
+		"cogs.fun",
+		"cogs.admin"
+	],
+	"disabled_cogs": [],
+	"channels": [
+		12345,
+		67890
+	],
+	"roles": {
+		"admin": 1234
+	}
+}
