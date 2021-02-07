@@ -1,5 +1,6 @@
 import os
 import json
+from dotenv import load_dotenv
 
 import discord
 from discord.ext import commands
@@ -7,6 +8,8 @@ from discord.ext.commands import CommandNotFound, MissingRequiredArgument
 
 import libs.config as config
 
+# Load environment variables from .env file
+load_dotenv()
 
 ####################
 # Config variables #
@@ -19,7 +22,6 @@ c_disabled_extensions = config.get_config("disabled_cogs")
 # String variables #
 ####################
 s_status = config.get_string("status")
-s_ping_msg = config .get_string("ping_msg")
 
 # Prefix
 bot = commands.Bot(command_prefix=c_prefix)
@@ -30,11 +32,6 @@ bot = commands.Bot(command_prefix=c_prefix)
 async def on_ready():
     print(f"\n### Logged in as {bot.user}\n")
     await bot.change_presence(status=discord.Status.idle, activity=discord.Game(name=f'{s_status}'))
-
-@bot.command
-async def on_message(message):
-    if message.content.startswith("<@"):
-        await message.channel.send(f"{s_ping_msg} {c_prefix}")
 
 # Removes the "command not found" error from the console
 @bot.event
