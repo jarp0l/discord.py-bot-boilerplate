@@ -1,8 +1,8 @@
 {
 	"prefix": "!",
 	"cogs": [
-		"cogs.fun",
-		"cogs.admin"
+		"cogs.admin",
+		"cogs.misc"
 	],
 	"disabled_cogs": [],
 	"channels": [

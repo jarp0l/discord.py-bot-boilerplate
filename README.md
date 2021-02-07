@@ -2,9 +2,13 @@
 
 This is a pretty basic boilerplate for discord.py bot. It features two example cogs as well.
 
-The bot token should be placed in a `.env` file in this format: 
+The bot token is to be placed in a `.env` file in this format:
 
 `BOT_TOKEN = <PLACE_TOKEN_HERE>`
+
+---
+
+Also check the branch [for_virtual_env](https://github.com/jarp0l/discord.py-bot-boilerplate/tree/for_virtual_env) for running the bot in virtual environment.
 
 ---
 
