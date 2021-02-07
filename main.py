@@ -1,15 +1,11 @@
 import os
 import json
-from dotenv import load_dotenv
 
 import discord
 from discord.ext import commands
 from discord.ext.commands import CommandNotFound, MissingRequiredArgument
 
 import libs.config as config
-
-# Load environment variables from .env file
-load_dotenv()
 
 ####################
 # Config variables #
@@ -44,7 +40,6 @@ async def on_command_error(ctx, error):
 
     raise error
 
-# Load cogs
 def main():
     # Logging the unlodead cogs into the console
     if len(c_disabled_extensions) != 0:
