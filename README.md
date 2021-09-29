@@ -4,7 +4,7 @@ This is a pretty basic boilerplate for discord.py bot. It features two example c
 
 The bot token is to be placed in a `.env` file in this format:
 
-`BOT_TOKEN = <PLACE_TOKEN_HERE>`
+`BOT_TOKEN=<PLACE_TOKEN_HERE>`
 
 ---
 
