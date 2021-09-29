@@ -4,7 +4,9 @@ This is a pretty basic boilerplate for discord.py bot. It features two example c
 
 The bot token should be placed in a `.env` file in this format: 
 
-`BOT_TOKEN = <PLACE_TOKEN_HERE>`
+`BOT_TOKEN=<PLACE_TOKEN_HERE>`
+
+Or just move/copy `.env.example` to `.env` making the necessary changes.
 
 Change the directory to `setup`. Execute the `setup.sh` script (first make it executable) to create a .env file and virtual environment. If the `virtualenv` command to create the environment is not found, it will install automatically.
 
