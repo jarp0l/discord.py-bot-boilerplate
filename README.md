@@ -6,6 +6,8 @@ The bot token is to be placed in a `.env` file in this format:
 
 `BOT_TOKEN=<PLACE_TOKEN_HERE>`
 
+Or just move/copy `.env.example` to `.env` making the necessary changes.
+
 ---
 
 Also check the branch [for_virtual_env](https://github.com/jarp0l/discord.py-bot-boilerplate/tree/for_virtual_env) for running the bot in virtual environment.
